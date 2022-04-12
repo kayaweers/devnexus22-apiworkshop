@@ -1,7 +1,7 @@
 _id: spc_3ba58382ed224a20a97b19cba8d99b8d
 type: ApiSpec
 parentId: wrk_be02cf6993874e7e9554dafe3858c2fe
-modified: 1649763411315
+modified: 1649772581060
 created: 1648596452731
 fileName: devnexus-openapi.yaml
 contents: "openapi: 3.0.2
@@ -114,7 +114,7 @@ contents: "openapi: 3.0.2
 
   \      responses:
 
-  \        200:
+  \        \"200\":
 
   \          description: OK
 
@@ -146,7 +146,7 @@ contents: "openapi: 3.0.2
 
   \                    date: 2022-04-12
 
-  \        404:
+  \        \"404\":
 
   \          description: Not Found
 
