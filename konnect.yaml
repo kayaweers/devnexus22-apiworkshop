@@ -227,6 +227,15 @@ service_packages:
                     - name: product
                     - name: session
                 api_specification_filename: demo.yaml
+            - name: rate-limiting
+                enabled: true
+                protocols:
+                  - http
+                config:
+                  fault_tolerant: true
+                  limit_by: ip
+                  minute: 5
+                  policy: local
           routes:
           - methods:
             - GET
