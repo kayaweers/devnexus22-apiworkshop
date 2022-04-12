@@ -4,9 +4,9 @@ service_packages:
   name: Devnexus_APIOps_Workshop
   versions:
   - document:
-    path: devnexus-api-v1.0.yaml
-    published: true
-  - implementation:
+      path: devnexus-api-v1.0.yaml
+      published: true
+    implementation:
       kong:
         service:
           host: apiops.kongproxy.me
