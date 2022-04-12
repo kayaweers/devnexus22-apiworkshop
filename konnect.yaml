@@ -231,7 +231,7 @@ service_packages:
               enabled: true
               protocols:
                 - http
-               config:
+              config:
                 fault_tolerant: true
                 limit_by: ip
                 minute: 5
