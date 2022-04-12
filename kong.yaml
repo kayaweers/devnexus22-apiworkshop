@@ -1,0 +1,35 @@
+_format_version: "1.1"
+services:
+  - name: Devnexus_APIOps_Workshop
+    protocol: https
+    host: apiops.kongproxy.me
+    port: 443
+    path: /
+    plugins: []
+    routes:
+      - tags:
+          - OAS3_import
+        name: Devnexus_APIOps_Workshop-listSessions
+        methods:
+          - GET
+        paths:
+          - /sessions$
+        strip_path: false
+      - tags:
+          - OAS3_import
+        name: Devnexus_APIOps_Workshop-getSession
+        methods:
+          - GET
+        paths:
+          - /sessions/(?<id>[^\/]+)$
+        strip_path: false
+      - tags:
+          - OAS3_import
+        name: Devnexus_APIOps_Workshop-list_products
+        methods:
+          - GET
+        paths:
+          - /products$
+        strip_path: false
+    tags:
+      - OAS3_import
