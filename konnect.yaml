@@ -3,6 +3,9 @@ service_packages:
 - description: placeholder description for Devnexus_APIOps_Workshop service package
   name: Devnexus_APIOps_Workshop
   versions:
+  - document:
+    path: devnexus-api-v1.0.yaml
+    published: true
   - implementation:
       kong:
         service:
